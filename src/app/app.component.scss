@@ -1,0 +1,63 @@
+
+$clr-blue: #2F2FA2;
+$clr-pink: #F64C72;
+$clr-dark-blue:#242582;
+$clr-dark-voilet:#553D67;
+$clr-voilet:#99738E;
+
+
+
+.image-upload{
+    font-size: 1rem;
+    input{
+        display: none;
+    }
+    label{
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border: 1px solid $clr-pink;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+}
+
+.image-preview{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-height: 500px;
+
+    .image-cropper{
+        width: 48%;
+    }
+    .cropped-image{
+        width: 48%;
+        img{
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}
+
+.submit-data{
+    margin-top: 1rem;
+    text-align: right;
+    button{
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        border: 1px solid $clr-pink;
+        border-radius: 3px;
+        color: #ffffff;
+        background: $clr-pink;
+        cursor: pointer;
+    }
+}
+
+.output-data{
+    margin-top: 1rem;
+    border: 1px solid #a2a2a2;
+    border-radius: 3px;
+    padding: 1rem 2rem;
+    word-wrap: break-word;
+}
